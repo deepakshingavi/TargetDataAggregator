@@ -3,7 +3,7 @@ package com.ds.practice.problemb.util
 object Calculator {
 
   def scoreStandardDeviation(associationScore: List[Double], avg: Double): Double = {
-    math.sqrt(associationScore.map(a => math.pow(a - avg, 2)).sum / associationScore.size)
+    BigDecimal(math.sqrt(associationScore.map(a => math.pow(a - avg, 2)).sum / associationScore.size)).setScale(2,BigDecimal.RoundingMode.HALF_UP).toDouble
   }
 
   def scoreAverage(associationScore: List[Double]): Double = {
