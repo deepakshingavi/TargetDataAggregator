@@ -11,7 +11,7 @@ import com.ds.practice.problema.util.{AppProperties, Constant}
 import scala.io.StdIn
 
 
-class EntryA() {
+class EntryA {
 
   val props = new AppProperties(new FileInputStream("src/main/resources/app.properties"))
 
@@ -48,7 +48,7 @@ class EntryA() {
    * @param input CLI input
    */
   def validateAndSubmit(input: Array[String]): Unit = {
-    if (input.isEmpty || input.length < 2) {
+    if (input.length < 2) {
       println(s"Insufficient input!")
       return
     }
