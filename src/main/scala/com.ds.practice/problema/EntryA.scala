@@ -106,7 +106,7 @@ object EntryA {
   def main(args: Array[String]): Unit = {
     val reader = new EntryA()
     while (true) {
-      print(">>> ")
+      print(">>>  ")
       val input = StdIn.readLine().split(" ")
       reader.validateAndSubmit(input)
     }
