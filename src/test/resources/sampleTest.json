@@ -1,0 +1,5 @@
+{"access_level": "public", "disease": {"id": "disease-1", "name": "glioblastoma multiforme"}, "id": "ffff8119c16671250210cf5cc7ce1f88", "sourceID": "slapenrich", "target": {"activity": "unknown", "id": "target-1"}, "type": "affected_pathway"}
+{"access_level": "public", "disease": {"id": "disease-1", "name": "squamous cell lung carcinoma"}, "id": "ffff1695bb1e336dbc488e94aa300bf5", "target": {"id": "target-2"}, "type": "affected_pathway"}
+{"access_level": "public", "disease": {"id": "disease-1", "name": "squamous cell lung carcinoma"}, "id": "ffff1695bb1e336dbc488e94aa300bf5", "target": {"id": "target-3"}, "type": "affected_pathway"}
+{"access_level": "public", "disease": {"id": "disease-2", "name": "squamous cell lung carcinoma"}, "id": "ffff1695bb1e336dbc488e94aa300bf5", "target": {"id": "target-1"}, "type": "affected_pathway"}
+{"access_level": "public", "disease": {"id": "disease-2", "name": "squamous cell lung carcinoma"}, "id": "ffff1695bb1e336dbc488e94aa300bf5", "target": {"id": "target-3"}, "type": "affected_pathway"}

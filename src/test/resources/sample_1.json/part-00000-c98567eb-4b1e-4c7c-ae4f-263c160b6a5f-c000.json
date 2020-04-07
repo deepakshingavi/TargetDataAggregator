@@ -1,0 +1,2 @@
+{"access_level": "public", "disease": {"id": "EFO_0000519", "name": "glioblastoma multiforme"}, "id": "ffff8119c16671250210cf5cc7ce1f88", "sourceID": "slapenrich", "target": {"activity": "unknown", "id": "ENSG00000140859"}, "type": "affected_pathway"}
+{"access_level": "public", "disease": {"id": "EFO_0000708", "name": "squamous cell lung carcinoma"}, "id": "ffff1695bb1e336dbc488e94aa300bf5", "target": {"id": "ENSG00000197170"}, "type": "affected_pathway"}
