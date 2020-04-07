@@ -9,7 +9,7 @@ class EntryTest extends AnyFunSuite with MockFactory{
 
 
   test("Verify invalid input start of cmd") {
-    val entry = new Entry()
+    val entry = new EntryA()
     entry.httpRequestPool.shutdownNow()
     entry.aggregatorPool.shutdownNow()
 
@@ -37,7 +37,7 @@ class EntryTest extends AnyFunSuite with MockFactory{
   }
 
   test("Verify invalid cmd params") {
-    val entry = new Entry()
+    val entry = new EntryA()
     entry.httpRequestPool.shutdownNow()
     entry.aggregatorPool.shutdownNow()
 
@@ -50,7 +50,7 @@ class EntryTest extends AnyFunSuite with MockFactory{
   }
 
   test("test target cli input") {
-    val entry = new Entry()
+    val entry = new EntryA()
     entry.httpRequestPool.shutdownNow()
     entry.aggregatorPool.shutdownNow()
     while(!entry.httpRequestPool.isTerminated || !entry.aggregatorPool.isTerminated) {
@@ -62,8 +62,8 @@ class EntryTest extends AnyFunSuite with MockFactory{
   }
 
 
-  test("Test disease cli inpit") {
-    val entry = new Entry()
+  test("Test disease cli input") {
+    val entry = new EntryA()
     entry.httpRequestPool.shutdownNow()
     entry.aggregatorPool.shutdownNow()
     while(!entry.httpRequestPool.isTerminated || !entry.aggregatorPool.isTerminated) {
@@ -75,7 +75,7 @@ class EntryTest extends AnyFunSuite with MockFactory{
   }
 
   test("Verify --test cli input") {
-    val entry = new Entry()
+    val entry = new EntryA()
     entry.httpRequestPool.shutdownNow()
     entry.aggregatorPool.shutdownNow()
     while(!entry.httpRequestPool.isTerminated || !entry.aggregatorPool.isTerminated) {

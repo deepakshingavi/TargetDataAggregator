@@ -11,7 +11,7 @@ class EndToEndTest extends AnyFunSuite with MockFactory {
 
   test("Complete flow test") {
 
-    val cliReader = new Entry()
+    val cliReader = new EntryA()
     val httpStub = stub[HttpWrapper]
     (httpStub.responseBody _).when(params).returns(sampleResponseStr)
     cliReader.validateAndSubmit("my_code_test -t ENSG00000157764".split(" "))

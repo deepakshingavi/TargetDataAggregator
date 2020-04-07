@@ -27,7 +27,7 @@ class EntryA() {
   /* Allocating half CPUs to URL request Processor */
   val coresForHttpReq: Int = props.get(Constant.TOTAL_NO_OF_CORES).toInt / 2
 
-  /* Allocating half CPUs to calcualting the min,max,avg,std-dev Processor */
+  /* Allocating half CPUs to calculating the min,max,avg,std-dev Processor */
   val coresForAggregation: Int = props.get(Constant.TOTAL_NO_OF_CORES).toInt - coresForHttpReq
 
   /* Thread pool for consuming from Request queue, fetching the data from URL, parsing JSON data and pushing list of scores to the queue*/
