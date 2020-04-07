@@ -18,7 +18,6 @@ class HttpTest extends AnyFunSuite
     val apps = new AppProperties(new FileInputStream("src/test/resources/app.properties"))
     val responseStr = Http(apps.get(Constant.FILTER_API_URL).concat("?")).asString.body
     val overalls: List[Double] = (parse(responseStr) \\ "overall" \\ classOf[JDouble])
-
     assert(overalls.nonEmpty)
   }
 
