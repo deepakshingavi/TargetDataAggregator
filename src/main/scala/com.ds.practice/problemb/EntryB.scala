@@ -16,7 +16,7 @@ object EntryB {
   def main(args: Array[String]): Unit = {
     logger.info("Begin : First part solution")
     try {
-      if(args.length !=3) {
+      if(args.length <3) {
         logger.error(s"Insufficient Program arguments!!! arg.length=${args.length}")
         return
       }
