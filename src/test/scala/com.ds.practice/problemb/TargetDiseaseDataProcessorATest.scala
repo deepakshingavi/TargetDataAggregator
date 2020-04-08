@@ -39,7 +39,7 @@ class TargetDiseaseDataProcessorATest extends AnyFunSuite
   test("invalid json file") {
     assertThrows[AnalysisException] {
       val sol = initSecond("src/test/resources/invalid.json")
-      val df = sol.loadAndProcess()
+      sol.loadAndProcess()
     }
   }
 
@@ -61,7 +61,7 @@ class TargetDiseaseDataProcessorATest extends AnyFunSuite
   }
 
   test("Mix records") {
-    val sol = initSecond("src/test/resources/mixRecords2.json")
+    val sol = initSecond("src/test/resources/mixRecordsBSecondInput.json")
     val df = sol.loadAndProcess()
 
     assert(df.count()==2)
@@ -74,17 +74,11 @@ class TargetDiseaseDataProcessorATest extends AnyFunSuite
 
   }
 
-  private def initSecond(input:String,output:String = ""): SecondPartSolution = {
-    val processor = new TargetDiseaseDataProcessor(sparkSession, input, output)
-    val solution = new SecondPartSolution(sparkSession, processor)
-    solution
-  }
-
-
   test("test simple target disease association cases") {
-    val sol = initFirst("src/test/resources/simpleB.json")
+    val sol = initFirst("src/test/resources/sampleBFirstInput.json")
     val df = sol.loadAndProcess()
     val row = df.collectAsList().get(0)
+
 
     assertResult("ENSG00000140859")(row.getAs[String](0))
     assertResult("disease-1")(row.getAs[String](1))
@@ -109,6 +103,12 @@ class TargetDiseaseDataProcessorATest extends AnyFunSuite
   private def initFirst(input:String,output:String = "") = {
     val processor = new TargetDiseaseDataProcessor(sparkSession, input, output)
     val solution = new FirstPartSolution(sparkSession, processor)
+    solution
+  }
+
+  private def initSecond(input:String,output:String = ""): SecondPartSolution = {
+    val processor = new TargetDiseaseDataProcessor(sparkSession, input, output)
+    val solution = new SecondPartSolution(sparkSession, processor)
     solution
   }
 

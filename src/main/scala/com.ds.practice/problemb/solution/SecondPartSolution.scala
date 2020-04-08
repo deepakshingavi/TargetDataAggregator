@@ -14,11 +14,13 @@ class SecondPartSolution(spark:SparkSession,processor:TargetDiseaseDataProcessor
    * @param df - Loaded Data Frame
    */
   def process(df: DataFrame): DataFrame = {
+    val start = System.currentTimeMillis()
     logger.info("begin : process")
     val targetDiseaseDf = processor.getTargetDiseaseRelationDf(df)
-    logger.info("Target Disease relation Data Frame loaded")
+    val dfFetchedAt = System.currentTimeMillis()
     val resultDf = processor.findTargetWithMultipleCommonDisease(targetDiseaseDf)
-    logger.info("end : process")
+    val end = System.currentTimeMillis()
+    logger.info(s"end : process time1=${end-dfFetchedAt} and time2=${dfFetchedAt-start}")
     resultDf
   }
 
