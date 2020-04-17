@@ -1,0 +1,12 @@
+{"disease": {"id": "disease-1"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-1"}}
+{"disease": {"id": "disease-1"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-2"}}
+{"disease": {"id": "disease-2"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-1"}}
+{"disease": {"id": "disease-2"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-2"}}
+{"disease": {"id": "disease-20"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-3"}}
+{"disease": {"id": "disease-56"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-30"}}
+{"disease": {"id": "disease-9"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-7"}}
+{"disease": {"id": "disease-56"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-31"}}
+{"disease": {"id": "disease-44"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-30"}}
+{"disease": {"id": "disease-44"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-31"}}
+{"disease": {"id": "disease-77"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-30"}}
+{"disease": {"id": "disease-77"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-31"}}

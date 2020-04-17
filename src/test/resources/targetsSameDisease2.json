@@ -1,0 +1,4 @@
+{"disease": {"id": "disease-1"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-1"}}
+{"disease": {"id": "disease-1"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-2"}}
+{"disease": {"id": "disease-2"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-1"}}
+{"disease": {"id": "disease-2"}, "scores": {"association_score": 1.0}, "target": {"id": "Target-2"}}
